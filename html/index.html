@@ -17,10 +17,10 @@
       <div id="nav">
         <ul class="nav nav-tabs nav-justified">
           <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
+          <li id="html">
             <a class="dropdown-toggle" data-toggle="dropdown">HTML
             <span class="caret"></span></a>
-              <ul id="html" class="dropdown-menu">
+              <ul class="dropdown-menu">
                 <li><a href="blockelements.html">Block Elements</a></li>
                 <li><a href="inlineelements.html">Inline Elements</a></li>
                 <li><a href="divsandspans.html">Divs and spans</a></li>
@@ -29,9 +29,9 @@
                 <li><a href="htmlMain.html"><strong>HTML Main</strong></a></li>
               </ul>
             </li>
-          <li><a class="dropdown-toggle" type="button" data-toggle="dropdown">CSS
+          <li id="css"><a class="dropdown-toggle" type="button" data-toggle="dropdown">CSS
           <span class="caret"></span></a>
-          <ul id="css" class="dropdown-menu">
+          <ul class="dropdown-menu">
             <li><a href="bootstrap.html">Bootstrap</a></li>
             <li><a href="floats.html">Floats</a></li>
             <li><a href="boxmodel.html">Box model</a></li>
@@ -41,9 +41,9 @@
             <li role="separator" class="divider"></li>
             <li><a href="cssMain.html"><strong>CSS Main</strong></a></li>
           </ul>
-          <li><a class="dropdown-toggle" data-toggle="dropdown">JavaScript
+          <li id="javascript"><a class="dropdown-toggle" data-toggle="dropdown">JavaScript
           <span class="caret"></span></a>
-          <ul id="javascript" class="dropdown-menu">
+          <ul class="dropdown-menu">
             <li><a href="arithmetic.html">Arithmetic</a></li>
             <li><a href="variables.html">Variables</a></li>
             <li><a href="methods.html">Methods</a></li>
@@ -52,9 +52,9 @@
             <li role="separator" class="divider"></li>
             <li><a href="javascriptMain.html"><strong>JavaScript Main</strong></a></li>
           </ul>
-          <li><a class="dropdown-toggle" data-toggle="dropdown">jQuery
+          <li id="jquery"><a class="dropdown-toggle" data-toggle="dropdown">jQuery
           <span class="caret"></span></a>
-          <ul id="jquery" class="dropdown-menu">
+          <ul class="dropdown-menu">
             <li><a href="dommanipulation.html">DOM manipulation</a></li>
             <li><a href="forms.html">Forms</a></li>
             <li><a href="attributes.html">Attributes</a></li>
@@ -65,6 +65,101 @@
             <li><a href="jqueryMain.html"><strong>jQuery Main</strong></a></li>
           </ul>
         </ul>
+      </div>
+      <div id="htmlcode" class="jumbotron">
+        <xmp><!DOCTYPE html>
+<html>
+    <head>
+        <rel="stylesheet" type="text/css" href="css/main.css" />
+        <title>Beep Boop Robot</title>
+    </head>
+    <body>
+        <div class="Container">
+            <div class="Header">
+            </div>
+            <div class="Menu">
+                <ul id="nav">
+                    <li>Appa</li>
+                    <li>Christy</li>
+                    <li>Breakfast</li>
+                    <li>Riff Raff</li>
+                    <li>Tacos</li>
+                </ul>
+            </div>
+          </div>
+        </body>
+          </xmp>
+      </div>
+      <div id="csscode" class="jumbotron">
+        <xmp>
+          @import "compass/css3";
+
+$n: 8;
+$od: 10em;
+$id: 7.5em;
+$ca: 360/$n;
+$p: .25em;
+
+html { overflow: hidden; background: silver; }
+.wrap {
+  position: absolute;
+  top: 50%; left: 50%;
+  margin: -$od/2;
+  border-radius: 50%;
+  color: #dbdbdb;
+
+  &:after {
+    position: absolute;
+    list-style: none;
+    background: #f4f6f5;</xmp>
+      </div>
+      <div id="scriptcode" class="jumbotron">
+        <xmp>
+          var now;
+
+          function showMilitaryTime() {
+               if (document.theForm.showMilitary[0].checked) {
+                    return true;
+               }
+               return false;
+          }
+
+          function showTheHours(theHour) {
+               if (showMilitaryTime() || (theHour > 0 && theHour < 13)) {
+                    return (theHour);
+               }
+               if (theHour == 0) {
+                    return (12);
+               }
+               return (theHour - 12);
+          }
+          var image = document.getElementById('myImage');
+   if (image.src.match("bulbon")) {
+        </xmp>
+      </div>
+      <div id="jquerycode" class="jumbotron">
+        <xmp>
+          function getParent($this) {
+            var selector = $this.attr('data-target')
+
+            if (!selector) {
+              selector = $this.attr('href')
+              selector = selector && /#[A-Za-z]/.test(selector) && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
+            }
+
+            var $parent = selector && $(selector)
+
+            return $parent && $parent.length ? $parent : $this.parent()
+          }
+
+          function clearMenus(e) {
+            if (e && e.which === 3) return
+            $(backdrop).remove()
+            $(toggle).each(function ()
+
+            $(function() {
+              $(".item").hover(function() {
+        </xmp>
       </div>
     </div>
   </body>

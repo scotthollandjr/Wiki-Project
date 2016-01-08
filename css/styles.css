@@ -2,6 +2,17 @@
   padding: 5px;
 }
 
+#htmlcode, #csscode, #scriptcode, #jquerycode {
+  background-color: transparent;
+  border-radius: 0 !important;
+  margin: 2%;
+  margin-bottom: 20%;
+  padding: 1%;
+  display: none;
+}
+
+
+
 @media (max-width: 768px) {
   .nav-justified > li {
     display: table-cell;
