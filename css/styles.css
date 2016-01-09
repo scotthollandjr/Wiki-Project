@@ -21,19 +21,38 @@ a:hover {
 
 #nav li a:hover {
 background-color: #b6e9b5;
+cursor: pointer;
 }
 
+.summary {
+  background-color: #eee;
+  width: 80%;
+  margin: 5%;
+  padding: 4%;
+  padding-top: none;
+}
 
+pre {
+  margin: auto;
+  margin-bottom: 10%;
+  background-color:#b6e9b5;
+  color: #4d934b;
+  width: 50%;
+  padding-top: none;
+  border: 1px #4d934b solid;
+}
 
-#htmlcode, #csscode, #scriptcode, #jquerycode {
+#homecode, #htmlcode, #csscode, #scriptcode, #jquerycode {
   background-color: transparent;
   border-radius: 0 !important;
   margin: 2%;
   margin-bottom: 20%;
   padding: 1%;
-  display: none;
 }
 
+#htmlcode, #csscode, #scriptcode, #jquerycode {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .nav-justified > li {
