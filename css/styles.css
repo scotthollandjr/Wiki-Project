@@ -1,5 +1,31 @@
 #header {
   padding: 5px;
+  background-color: #6ed36c;
+  font-family: 'Ubuntu Mono';
+}
+
+#logo {
+  width: 75px;
+  height: 75px;
+
+}
+
+.menuMains {
+  width: 40%;
+  text-align: center;
+}
+
+a {
+  color: #213F20;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #4d934b;
+}
+
+#nav li a:hover {
+background-color: #b6e9b5;
 }
 
 #htmlcode, #csscode, #scriptcode, #jquerycode {
@@ -10,6 +36,7 @@
   padding: 1%;
   display: none;
 }
+
 
 
 
