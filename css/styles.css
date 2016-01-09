@@ -10,11 +10,6 @@
 
 }
 
-.menuMains {
-  width: 40%;
-  text-align: center;
-}
-
 a {
   color: #213F20;
 }
@@ -28,6 +23,8 @@ a:hover {
 background-color: #b6e9b5;
 }
 
+
+
 #htmlcode, #csscode, #scriptcode, #jquerycode {
   background-color: transparent;
   border-radius: 0 !important;
@@ -36,8 +33,6 @@ background-color: #b6e9b5;
   padding: 1%;
   display: none;
 }
-
-
 
 
 @media (max-width: 768px) {
